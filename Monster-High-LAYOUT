@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Monster High</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #ff66b2;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    aside {
+      flex-basis: 30%;
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .aside-section {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #ff66b2;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Monster High</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Personagens</a></li>
+        <li><a href="#">Episódios</a></li>
+        <li><a href="#">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main>
+      <section>
+        <h2>Personagens</h2>
+        <p>Conheça os monstros adolescentes da Monster High e suas histórias emocionantes. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum vitae tellus eu pharetra. Mauris interdum augue sed tempor fringilla. </p>
+      </section>
+
+      <section>
+        <h2>Episódios</h2>
+        <p>Explore os episódios cheios de aventuras e mistérios que acontecem na escola Monster High.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum vitae tellus eu pharetra. Mauris interdum augue sed tempor fringilla. Donec nec velit ligula. Nunc tincidunt sollicitudin libero, sed commodo nibh feugiat dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus quis dignissim ante. Vivamus aliquam, metus nec fringilla auctor, nisl odio iaculis nunc, ut sollicitudin odio tortor et dolor. </p>
+
+        <p> Aenean tincidunt placerat sagittis. Praesent ac ligula accumsan, cursus dolor quis, mattis erat. Aenean vel volutpat nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed nec urna erat. Phasellus ut rhoncus magna. Aenean ut mauris eget sem sollicitudin dictum ac sit amet lectus. Vestibulum porta pharetra sagittis. Phasellus blandit sollicitudin mi vel efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec massa nulla, ultricies sed feugiat at, malesuada nec dui.
+        Aenean in semper ligula. Donec porttitor venenatis felis, sed convallis neque tempor sit amet. Sed maximus nibh vel faucibus pulvinar. Pellentesque ut velit rhoncus, laoreet est sit amet, finibus ante. Suspendisse ultrices nibh urna, in tincidunt nunc semper et. Pellentesque sed sem dui. Ut tempus molestie est, sit amet ultricies quam pretium vitae. Curabitur lorem diam, viverra sit amet nunc vel, volutpat porta mauris. Donec eget malesuada dui. Vestibulum sagittis facilisis magna. Quisque vulputate nisl vitae elit cursus, nec sodales odio varius. Pellentesque porttitor cursus lectus at commodo. </p>
+
+       <p> Aenean condimentum iaculis erat, vitae hendrerit est facilisis id. Sed ultricies dignissim nulla, at commodo quam facilisis at. Vivamus molestie ornare dolor, non tristique nunc porttitor eu. Integer nec ligula fermentum, pulvinar eros non, fringilla purus. Aliquam nisi nunc, efficitur quis suscipit at, elementum quis dolor. In vestibulum bibendum sapien, a scelerisque erat gravida at. Cras eleifend maximus ligula, in laoreet lectus posuere in. Integer massa mi, finibus vel massa ut, varius faucibus massa. Nullam id sapien et erat tempor auctor eget non magna.</p>
+      </section>
+    </main>
+
+    <aside>
+      <div class="aside-section">
+        <h2>Cadastro</h2>
+        <form>
+          <div>
+            <label for="cadastro">Usuário:</label>
+            <br>
+            <input type="text" id="cadastro" name="cadastro">
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" name="email">
+          </div>
+
+          <div>
+            <label for="senha">Senha:</label>
+            <br>
+            <input type="password" id="senha" name="senha">
+          </div>
+           
+         <input type="submit" value="Enviar"> 
+        </form>
+      </div>
+
+      <div class="aside-section">
+        <h2>Comentários</h2>
+        <div>
+          <label for="comentario">Comentário:</label>
+          <br>
+          <textarea id="comentario" name="comentario" rows="4"></textarea>
+        </div>
+        <input type="submit" value="Enviar Comentário">
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Monster High - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>   
+
+
+ESTILIZANDO EM CSS: 
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000; 
+  color: #fff; 
+}
+
+header {
+  background-color: #ff66b2;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+aside {
+  flex-basis: 30%;
+  background-color: #ff66b2; 
+  color: #000; 
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.aside-section {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #ff66b2;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+
+
+.container form,
+.container textarea,
+.container input[type="submit"] {
+  background-color: #ff66b2;
+  padding: 10px;
+  border-radius: 8px; 
+  margin-bottom: 10px;
+}
+
+.container textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container input[type="submit"] {
+  background-color: #ff66b2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.container input[type="submit"]:hover {
+  background-color: #e64d8a; 
+}
+
